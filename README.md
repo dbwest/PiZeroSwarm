@@ -53,7 +53,7 @@ In this project I'll use:
     ```
     to check all the nodes on the swarm. [You can create a swarm of one manager node, but you cannot have a worker node without at least one manager node](https://docs.docker.com/engine/swarm/how-swarm-mode-works/nodes/). This means that we'll have to promote our second node to a manager:
     ```bash
-    pi@raspberrypi:~ $ sudo docker promote NODE_ID
+    pi@raspberrypi:~ $ sudo docker node promote NODE_ID
     Node NODE_ID promoted to a manager in the swarm.
     ```
 
